@@ -11,7 +11,7 @@ export const typeOrmConfig = (configService: ConfigService) : TypeOrmModuleOptio
     database: configService.get('DATABASE_NAME'),
     //Cambiar el ssl a true en produccion
     ssl: false,
-    logging: true,
+    logging: false,
     entities: [join(__dirname + '../../**/*.entity.{js,ts}')],
     synchronize: true
 })
