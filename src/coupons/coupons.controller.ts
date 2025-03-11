@@ -2,7 +2,7 @@ import { Controller, Get, Post, Body, Param, Delete, Put } from '@nestjs/common'
 import { CouponsService } from './coupons.service';
 import { CreateCouponDto } from './dto/create-coupon.dto';
 import { UpdateCouponDto } from './dto/update-coupon.dto';
-import { IdValidationPipe } from 'src/common/pipe/id-validation/id-validation.pipe';
+import { IdValidationPipe } from '../common/pipe/id-validation/id-validation.pipe';
 import { ApplyCouponDto } from './dto/apply-coupon.dto';
 
 @Controller('coupons')
